@@ -9,4 +9,26 @@
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+    <style name="DateStyle">
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="NameStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_100_</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ThumbnailTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_3</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EmailStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_100_</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

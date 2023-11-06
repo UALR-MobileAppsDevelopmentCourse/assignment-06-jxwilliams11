@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:focusable="true">
+    <RelativeLayout
+        android:layout_marginStart="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_xmedium"
+        android:layout_width="@dimen/spacing_xxlarge"
+        android:layout_height="@dimen/spacing_xxlarge"
+        android:layout_marginLeft="@dimen/spacing_middle">
+        <TextView
+            android:id="@+id/thumbnail"
+            android:clickable="true"
+            style="@style/ThumbnailTextStyle"
+            android:text="F"
+            android:layout_width="@dimen/spacing_xxlarge"
+            android:layout_height="@dimen/spacing_xxlarge"
+            android:background="@drawable/shape_circle"
+            android:focusable="true"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/deleteImg"
+            android:visibility="invisible"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/ic_delete_24px" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginStart="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_xmedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/spacing_middle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/name"
+                style="@style/NameStyle"
+                android:text="Fname Lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/date"
+                style="@style/DateStyle"
+                android:text="01 Jan 2000"
+                android:layout_marginRight="@dimen/spacing_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_middle" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/address"
+            style="@style/EmailStyle"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:textStyle="bold"
+            android:text="Fname.Lname@email.com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/body"
+            android:layout_marginTop="@dimen/spacing_xsmall"
+            android:text="email content here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/spacing_xmedium"/>
+    </LinearLayout>
+</LinearLayout>
